@@ -10,6 +10,7 @@ entities:
   - rest_characteristic
 
 actions:
+  - action_restaurant_search 
   - utter_greet
   - utter_did_that_help
   - utter_list_restaurants
