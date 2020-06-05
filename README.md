@@ -14,7 +14,7 @@ Modifica nlu.md
 
 `docker run -it -v $(pwd):/app rasa/rasa:1.8.1-full shell nlu`
 
-
+Échale un vistazo a los diferentes resultados que te puede dar un test del modelo NLU en [`test-nlu.md`](https://github.com/monoceros-tech/rasa-restaurant-docker/blob/nlu-test/test-nlu.md)
 
 
 ## Si empiezas con RASA init 
