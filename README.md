@@ -24,3 +24,10 @@ Modifica nlu.md
 y luego testea la conversación "dummy"
 
 `docker run -it -v $(pwd):/app rasa/rasa:1.8.1-full shell` 
+
+
+## Actualiza tu asistente DM con el dominio y stories, y reentrena
+
+Modifica stories.md y domain.yml
+
+`docker run -v $(pwd):/app rasa/rasa:1.8.1-full train --domain domain.yml --data data --out models`

@@ -1,0 +1,45 @@
+intents:
+  - greet
+  - goodbye
+  - search_restaurant
+  - affirm
+  - deny
+
+entities:
+  - food_type
+  - rest_characteristic
+
+actions:
+  - utter_greet
+  - utter_did_that_help
+  - utter_list_restaurants
+  - utter_list_restaurants_cheap
+  - utter_sorry
+  - utter_sorry_not_understood
+  - utter_goodbye
+
+responses:
+  utter_greet:
+  - text: "Hey! What kind of restaurant are you looking for?"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_list_restaurants:
+  - text: "Great! Here is the list of restaurants..."
+
+  utter_list_restaurants_cheap:
+  - text: "Awesome! Here is the list of CHEAP restaurants..."
+
+  utter_sorry:
+  - text: "Oops!"
+
+  utter_sorry_not_understood:
+  - text: "Sorry! I don't know what it is. What type of restaurant?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
